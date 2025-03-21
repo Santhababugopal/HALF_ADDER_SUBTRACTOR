@@ -1,4 +1,7 @@
 # HALF_ADDER_SUBTRACTOR
+NAME: SANTHABABU G
+
+REGISTER NUMBER: 212224040292
 
 Implementation-of-Half-Adder-and-Half Subtractor-circuit
 
@@ -34,6 +37,17 @@ Borrow = A’B
 Figure -02 HALF Subtractor
 
 **Truthtable**
+HALF ADDER TRUTH TABLE:
+
+
+![HALF ADDER](https://github.com/user-attachments/assets/ce99652f-a558-4cff-8760-6cbcbc274596)
+
+
+HALF SUBTRACTOR TRUTH TABLE:
+
+
+![half_sub](https://github.com/user-attachments/assets/e43c6435-ab59-49fe-8bae-a9677b9df53b)
+
 
 **Procedure**
 
@@ -50,12 +64,26 @@ Figure -02 HALF Subtractor
 
 **Program:**
 
-/* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-
-Developed by: RegisterNumber:*/
+```
+module EXP3 (a,b,x,y,c,d,s,w);
+input a,b,x,y;
+output c,d,s,w;
+assign s = a^b;
+assign c = a&b;
+assign d = x^y;
+assign w = ~x&y;
+endmodule  
+```
 
 **RTL Schematic**
+![Screenshot 2025-03-21 135039](https://github.com/user-attachments/assets/25ea5ce8-3671-4317-aedf-512aeb7a1519)
+
 
 **Output/TIMING Waveform**
+![Screenshot 2025-03-21 135443](https://github.com/user-attachments/assets/5f20216a-91a5-4dd2-90da-34bf520b204c)
+
 
 **Result:**
+
+
+Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
